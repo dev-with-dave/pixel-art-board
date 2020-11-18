@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'joystix';
+  src: url('./assets/fonts/joystix\ monospace.ttf');
+}
+
+button,
+html {
+  font-family: 'joystix', Arial, Helvetica, sans-serif !important;
+  letter-spacing: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #222 url('./assets/images/bg.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column nowrap;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  color: rgb(101, 255, 30);
+  background-color: rgb(5, 5, 5);
+  padding: 0.75rem;
+}
+
+input::placeholder {
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  font-family: 'joystix', Arial, Helvetica, sans-serif !important;
+}
+
+input[type='number'] {
+  letter-spacing: 2px;
+  font-family: 'joystix', Arial, Helvetica, sans-serif !important;
+  min-width: 12rem;
+  padding: 0.25rem;
+  margin: 0.5rem;
+  height: 100%;
+}
+
+button[type='submit'] {
+  cursor: pointer;
+  letter-spacing: 2px;
+  height: 100%;
+  display: inline-block;
+  padding: 0 1rem;
+  border: none;
+  background-color: beige;
+  font-size: 0.9rem;
+  transition: all 125ms ease;
+}
+
+button[type='submit']:hover {
+  background-color: rgb(0, 0, 0);
+  border: 1px solid;
+  color: rgb(101, 255, 30);
+}
+
+.config__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  height: 100%;
+}
+
+#board {
+  box-shadow: 3px 3px 10px #222;
+}
+
+.line {
+  display: flex;
+  width: fit-content;
+}
+
+.cell {
+  border: 1px solid rgba(61, 61, 61, 0.25);
+  height: 50px;
+  width: 50px;
+  background-color: #c2c2c2;
+}
+
+.colors__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  padding: 1rem;
+  border-top-left-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  bottom: 0;
+  right: 0;
+}
+
+.colors {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.493));
+  margin: 0 0.5rem;
+  transition: all 250ms ease;
+  outline: none;
+}
+
+.colors:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.red {
+  background-color: #ff0000;
+  border: 1px solid;
+}
+
+.green {
+  background-color: #0f0;
+  border: 1px solid;
+}
+
+.blue {
+  background-color: #00f;
+  border: 1px solid;
+}
