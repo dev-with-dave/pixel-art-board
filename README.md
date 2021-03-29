@@ -5,28 +5,43 @@ Au programme : concevoir une application JavaScript pour créer une ardoise de d
 ## Étape 1 - Générer l'ardoise
 
 On va d'abord créer des élements en Javascript pour créer une grille de 8 cases x 8 cases
+
 Pour cela il faudra exploiter les boucles et ajouter des élements au DOM
+
 On ajoute ensuite les styles qu'on souhaite
+
 Il faut pouvoir visualiser toutes nos lignes et toutes nos colonnes
+
 Pour l'instant tous les pixels ont la même couleur ;)
 
 ## Étape 2 - Gérer le clic sur un pixel
 
 On va maintenant s'occuper de pouvoir changer la couleur des pixels
+
 Si on clique sur un pixel on le fait passer en blanc
+
 Si on reclique dessus il passe en noir
+
 Si on reclique dessus il passe en blanc
+
 Si on reclique dessus il passe en noir
+
 etc ...
+
 On doit réagir au clic sur les pixels ensuite on doit modifier la couleur d'arrière plan du pixel cliqué
+
 On a par exemple dû voir un moyen de récupérer tout plein d'informations liées à l'événement dans la fonction de rappel de l'écouteur. Peut-être que l'une de ces informations est l'élement cliqué
 
 ## Étape 3 - Formulaire de configuration
 
 On va ajouter (toujours en JS) des élements au formulaire
+
 On ajoute un champ pour choisir la taille de la grille
+
 On ajoute un bouton pour valider
+
 Lorsqu'on soumet le formulaire on veut générer une nouvelle grille à la place de la grille actuelle, mais en tenant compte de la taille saisie dans le champ
+
 Par exemple l'utilisateur saisit 10 dans le champ, il valide, une nouvelle grille de 10 cases x 10 cases est générée à la place de la grille existante
 
 <details>
