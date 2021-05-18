@@ -2,6 +2,10 @@
 
 Au programme : concevoir une application JavaScript pour créer une ardoise de dessin en pixel art.
 
+## <img src="./result/result-1.png">
+
+<img src="./result/result-2.png">
+
 ## Étape 1 - Générer l'ardoise
 
 On va d'abord créer des élements en Javascript pour créer une grille de 8 cases x 8 cases
